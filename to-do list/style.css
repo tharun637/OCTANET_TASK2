@@ -1,0 +1,43 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+	border-top: 5px solid #050505;
+	border-bottom: 5px solid #0c0c0c;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+
+.todo {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+.todo__value {
+
+	background-color: white;
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	flex-grow: 1;
+}
+
+.todo:has(.todo__checkbox:checked) {
+	color: #0a0909;
+	background: #d6d4d4;
+	text-decoration: line-through;
+    order: 1;
+}
+body{
+   background-image: url(todolist1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+h1{
+    text-align:center;
+   
+   
+}
